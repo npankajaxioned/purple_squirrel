@@ -113,7 +113,17 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-nav {
+header > img:hover{
+  background-color:#5f6bcc ;
+  color: azure;
+}
+
+header>div.wrapper>h1:hover {
+  background-color:#5f6bcc ;
+  color: azure;
+}
+
+header > div{
   padding: 14px 40px;
   border-bottom: 2px solid #C4C6CB;
   display: flex;
@@ -121,9 +131,9 @@ nav {
   align-items: flex-end;
 }
 
-nav img { width: 60px; }
+header > div img { width: 60px; }
 
-nav h1 {
+header > div h1 {
   padding-bottom: 5px;
   color: #5f6bcc;
   font-weight: 800;
@@ -389,11 +399,13 @@ nav h1 {
 
 .working ul li { padding: 40px; }
 
-.working ul li i {
+.working ul li span {
   background-color: #5f6bcc;
   color: white;
   font-size: 36px;
   border-radius: 50%;
+  padding: 24px;
+  
 }
 
 .working ul li:nth-of-type(1) i { padding: 22px 25px; }
@@ -518,6 +530,7 @@ nav h1 {
   text-indent: -9999px;
   display: inline-block;
   padding: 3px;
+  font-size: 60px;
 }
 
 
@@ -527,6 +540,8 @@ nav h1 {
  font-weight: 600;
  text-indent: 0;
  float: left;
+ font-size: 28px;
+ 
   
 }
 
@@ -546,13 +561,59 @@ nav h1 {
   
 }
 
+.circle:hover::before {
+  color: #666;
+}
+
+.search {
+  text-indent: -9999px;
+  display: inline-block;
+  padding: 3px;
+}
 
 
+.search::before{
+ content: "\f002";
+ font-family: "Font Awesome 5 Free";
+ font-weight: 600;
+ text-indent: 0;
+ float: left;
+ padding: 0 10px;
+  
+}
+.calender {
+  text-indent: -9999px;
+  display: inline-block;
+  padding: 3px;
+}
 
 
+.calender::before{
+ content: "\f073";
+ font-family: "Font Awesome 5 Free";
+ font-weight: 600;
+ text-indent: 0;
+ float: left;
+ padding: 0 10px;
+  
+}
+.comments {
+  text-indent: -9999px;
+  display: inline-block;
+  padding: 3px;
+}
 
 
- 
+.comments::before{
+ content: "\f086";
+ font-family: "Font Awesome 5 Free";
+ font-weight: 600;
+ text-indent: 0;
+ float: left;
+ padding: 0 10px;
+  
+}
+
 
  /*=================================
   footer styling ends here
