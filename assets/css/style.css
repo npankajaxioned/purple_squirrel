@@ -113,29 +113,25 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header > img:hover{
-  background-color:#5f6bcc ;
-  color: azure;
 
-}
 header span{
   color: #5f6bcc;
 }
 
-header>div.wrapper>h1:hover {
-  background-color:#C4C6CB ;
-  color: azure;
-}
+
 
 header > div{
-  padding: 14px 40px;
+  padding: 14px 0px;
   border-bottom: 2px solid #C4C6CB;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
 
-header > div img { width: 60px; }
+header > div img { 
+  width: 60px;
+  margin-left: 40px;
+ }
 
 header > div h1 {
   padding-bottom: 5px;
