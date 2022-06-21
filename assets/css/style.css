@@ -546,6 +546,30 @@ header > div h1 {
  
   
 }
+.right{ right: 0;}
+.left{ left: 0; }
+.icon {
+  position: absolute;
+  font-size: 44px;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  text-indent: -9999px;
+  padding: 0px 20px;
+  transition: all 0.2s ease-in-out 0s;
+  font-weight: 600;
+}
+.icon:hover::before{
+  color: #666;
+}
+.icon::before {
+  font-family: 'Font Awesome 5 Free';
+  float: right;
+  color: #fff;
+  text-indent: 0;
+}
+.right::before { content: '\f054'; }
+.left::before { content: '\f053'; }
 
 .circle{
   text-indent: -9999px;
@@ -553,7 +577,6 @@ header > div h1 {
   padding: 3px;
   color: white;
 }
-
 
 .circle::before{
  content: "\f111";
@@ -627,6 +650,7 @@ header > div h1 {
   text-indent: 0;
   float: left;
   padding: 0 10px;
+  color: #C4C6CB;
 }
 .chevron-right::before{
   content: "\f054";
@@ -639,6 +663,7 @@ header > div h1 {
 .chevron-right:hover::before {
   color:grey;
 }
+
 .chevron-left{
   content: "\f086";
   font-family: "Font Awesome 5 Free";
@@ -646,6 +671,7 @@ header > div h1 {
   text-indent: 0;
   float: left;
   padding: 0 10px;
+  color: #C4C6CB;
 }
 .chevron-left::before{
   content: "\f053";
@@ -655,7 +681,9 @@ header > div h1 {
   float: left;
   padding: 0 10px;
 }
-
+.chevron-left:hover::before {
+  color:grey;
+}
 
  /*=================================
   footer styling ends here
